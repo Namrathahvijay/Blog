@@ -1,5 +1,5 @@
 const BASE_URL = import.meta.env.VITE_API_BASE_URL + "/api";
-
+axios.post(`${api}/api/register`, userData)
 // Helper to get auth headers
 const getAuthHeaders = (isForm = false) => {
   const token = localStorage.getItem("token");

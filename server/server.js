@@ -12,6 +12,9 @@ import reportRoutes from "./routes/reportRoutes.js";
 
 dotenv.config();
 const app = express();
+const cors = require('cors');
+app.use(cors({ origin: "*" }));
+
 
 // ✅ Strict CORS for credentialed requests - MUST be before other middleware
 app.use((req, res, next) => {

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom color scheme */
+:root {
+  --color-primary: #06b6d4;
+  --color-primary-dark: #0891b2;
+  --color-secondary: #14b8a6;
+  --color-accent: #3b82f6;
+}
+
+/* Global mobile overflow fixes */
+html, body, #root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure embedded media never overflows viewport width */
+img, video, iframe {
+  max-width: 100%;
+}
